@@ -28,7 +28,7 @@ class Bloomelle(Creature, HealCapability):
         return f"{self.name} uses {self.attack_type}!"
 
     def heal(self) -> str:
-        return f"{self.name} heals itself and others for a small amount"
+        return f"{self.name} heals itself and others for a large amount"
 
 
 class Shiftling(Creature, TransformCapability):
@@ -57,7 +57,7 @@ class Shiftling(Creature, TransformCapability):
             self.transformed = False
             return f"{self.name} returns to normal."
         else:
-            return f"{self.name} is already normal"
+            return f"{self.name} is already normal."
 
 
 class Morphagon(Creature, TransformCapability):
@@ -84,6 +84,6 @@ class Morphagon(Creature, TransformCapability):
     def revert(self) -> str:
         if self.transformed is True:
             self.transformed = False
-            return f"{self.name} stabalizes its form."
+            return f"{self.name} stabilizes its form."
         else:
-            return f"{self.name} is already normal"
+            return f"{self.name} is already normal."

@@ -1,12 +1,12 @@
 from ex0.creature_factory import CreatureFactory
-import ex0.creatures
+from ex0.creatures import Creature, Flameling, Pyrodon
 
 
 class FlameFactory(CreatureFactory):
-    def create_base(self) -> ex0.creatures.Creature:
-        a_flameling = ex0.creatures.Flameling()
+    def create_base(self) -> Creature:
+        a_flameling = Flameling()
         return a_flameling
 
-    def create_evolved(self) -> ex0.creatures.Creature:
-        a_pyrodon = ex0.creatures.Pyrodon()
+    def create_evolved(self) -> Creature:
+        a_pyrodon = Pyrodon()
         return a_pyrodon
